@@ -33,7 +33,6 @@
   - ServiceWorker
   - TramDriver
 
-# Please kill this
 - type: department
   id: CentralCommand
   name: department-CentralCommand
@@ -65,16 +64,6 @@
   - HeadOfSecurity
   - ResearchDirector
   - Quartermaster
-  # Please kill these
-  - CentralCommandOfficial
-  - CBURN
-  - ERTLeader
-  - ERTChaplain
-  - ERTJanitor
-  - ERTMedical
-  - ERTSecurity
-  - ERTEngineer
-  - DeathSquad
   primary: false
   weight: 100
 
@@ -101,6 +90,9 @@
   - MedicalIntern
   - Psychologist
   - Paramedic
+  - Surgeon
+  - SeniorDoctor
+  - ChiefDoctor
 
 - type: department
   id: Security
@@ -146,3 +138,55 @@
   - Psychologist
   - TramDriver
   primary: false
+
+# NT LABS departments
+- type: department
+  id: InternalSecurity
+  name: department-InternalSecurity
+  description: department-InternalSecurity-description
+  color: "#6B4BB6"
+  roles:
+  - InternalSecurityAgent
+  - InternalSecurityOperative
+  - DirectorInternalSecurity
+
+- type: department
+  id: Containment
+  name: department-Containment
+  description: department-Containment-description
+  color: "#C73A3A"
+  roles:
+  - ContainmentEmployee
+  - ContainmentSpecialist
+  - DeputyContainmentCommander
+  - ContainmentCommander
+
+- type: department
+  id: Supply
+  name: department-Supply
+  description: department-Supply-description
+  color: "#D6A400"
+  roles:
+  - Loader
+  - Logistic
+  - ChiefSupply
+
+- type: department
+  id: ResearchAndDevelopment
+  name: department-ResearchAndDevelopment
+  description: department-ResearchAndDevelopment-description
+  color: "#3D9B45"
+  roles:
+  - Researcher
+  - SeniorResearcher
+  - ResearchDevelopmentDirector
+
+- type: department
+  id: Technical
+  name: department-Technical
+  description: department-Technical-description
+  color: "#238C96"
+  roles:
+  - Technician
+  - Engineer
+  - SeniorEngineer
