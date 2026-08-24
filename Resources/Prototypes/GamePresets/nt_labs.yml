@@ -1,0 +1,8 @@
+- type: gamePreset
+  id: NTLabs
+  name: nt-labs-title
+  description: nt-labs-description
+  showInVote: true
+  minPlayers: 1
+  rules:
+  - NtLabsRule
