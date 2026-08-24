@@ -1,0 +1,329 @@
+# NT LABS medical department
+- type: job
+  id: Surgeon
+  name: job-name-surgeon
+  description: job-description-surgeon
+  playTimeTracker: JobSurgeon
+  requirements:
+  - !type:SpeciesRequirement
+    species:
+    - Human
+  startingGear: DoctorGear
+  icon: "JobIconMedicalDoctor"
+  access:
+  - Medical
+  - Maintenance
+
+- type: job
+  id: SeniorDoctor
+  name: job-name-senior-doctor
+  description: job-description-senior-doctor
+  playTimeTracker: JobSeniorDoctor
+  requirements:
+  - !type:SpeciesRequirement
+    species:
+    - Human
+  - !type:DepartmentTimeRequirement
+    department: Medical
+    time: 20h
+  startingGear: DoctorGear
+  icon: "JobIconMedicalDoctor"
+  access:
+  - Medical
+  - Maintenance
+
+- type: job
+  id: ChiefDoctor
+  name: job-name-chief-doctor
+  description: job-description-chief-doctor
+  playTimeTracker: JobChiefDoctor
+  requirements:
+  - !type:SpeciesRequirement
+    species:
+    - Human
+  - !type:DepartmentTimeRequirement
+    department: Medical
+    time: 60h
+  startingGear: DoctorGear
+  icon: "JobIconChiefMedicalOfficer"
+  access:
+  - Medical
+  - Maintenance
+
+# NT LABS internal security
+- type: job
+  id: InternalSecurityAgent
+  name: job-name-internal-security-agent
+  description: job-description-internal-security-agent
+  playTimeTracker: JobInternalSecurityAgent
+  requirements:
+  - !type:SpeciesRequirement
+    species:
+    - Human
+  startingGear: SecurityOfficerGear
+  icon: "JobIconSecurityOfficer"
+  access:
+  - InternalSecurity
+  - Maintenance
+
+- type: job
+  id: InternalSecurityOperative
+  name: job-name-internal-security-operative
+  description: job-description-internal-security-operative
+  playTimeTracker: JobInternalSecurityOperative
+  requirements:
+  - !type:SpeciesRequirement
+    species:
+    - Human
+  - !type:DepartmentTimeRequirement
+    department: InternalSecurity
+    time: 20h
+  startingGear: SecurityOfficerGear
+  icon: "JobIconSecurityOfficer"
+  access:
+  - InternalSecurity
+  - Maintenance
+
+- type: job
+  id: DirectorInternalSecurity
+  name: job-name-director-internal-security
+  description: job-description-director-internal-security
+  playTimeTracker: JobDirectorInternalSecurity
+  requirements:
+  - !type:SpeciesRequirement
+    species:
+    - Human
+  - !type:DepartmentTimeRequirement
+    department: InternalSecurity
+    time: 60h
+  startingGear: SecurityOfficerGear
+  icon: "JobIconHeadOfSecurity"
+  access:
+  - InternalSecurity
+  - Maintenance
+
+# NT LABS containment department
+- type: job
+  id: ContainmentEmployee
+  name: job-name-containment-employee
+  description: job-description-containment-employee
+  playTimeTracker: JobContainmentEmployee
+  requirements:
+  - !type:SpeciesRequirement
+    species:
+    - Human
+  startingGear: SecurityOfficerGear
+  icon: "JobIconSecurityOfficer"
+  access:
+  - Containment
+  - Maintenance
+
+- type: job
+  id: ContainmentSpecialist
+  name: job-name-containment-specialist
+  description: job-description-containment-specialist
+  playTimeTracker: JobContainmentSpecialist
+  requirements:
+  - !type:SpeciesRequirement
+    species:
+    - Human
+  - !type:DepartmentTimeRequirement
+    department: Containment
+    time: 20h
+  startingGear: SecurityOfficerGear
+  icon: "JobIconWarden"
+  access:
+  - Containment
+  - Maintenance
+
+- type: job
+  id: DeputyContainmentCommander
+  name: job-name-deputy-containment-commander
+  description: job-description-deputy-containment-commander
+  playTimeTracker: JobDeputyContainmentCommander
+  requirements:
+  - !type:SpeciesRequirement
+    species:
+    - Human
+  - !type:DepartmentTimeRequirement
+    department: Containment
+    time: 40h
+  startingGear: WardenGear
+  icon: "JobIconWarden"
+  access:
+  - Containment
+  - Maintenance
+
+- type: job
+  id: ContainmentCommander
+  name: job-name-containment-commander
+  description: job-description-containment-commander
+  playTimeTracker: JobContainmentCommander
+  requirements:
+  - !type:SpeciesRequirement
+    species:
+    - Human
+  - !type:DepartmentTimeRequirement
+    department: Containment
+    time: 60h
+  startingGear: WardenGear
+  icon: "JobIconWarden"
+  access:
+  - Containment
+  - Maintenance
+
+# NT LABS supply department
+- type: job
+  id: Loader
+  name: job-name-loader
+  description: job-description-loader
+  playTimeTracker: JobLoader
+  requirements:
+  - !type:SpeciesRequirement
+    species:
+    - Human
+  startingGear: CargoTechGear
+  icon: "JobIconCargoTechnician"
+  access:
+  - Supply
+  - Maintenance
+
+- type: job
+  id: Logistic
+  name: job-name-logistic
+  description: job-description-logistic
+  playTimeTracker: JobLogistic
+  requirements:
+  - !type:SpeciesRequirement
+    species:
+    - Human
+  - !type:DepartmentTimeRequirement
+    department: Supply
+    time: 20h
+  startingGear: CargoTechGear
+  icon: "JobIconCargoTechnician"
+  access:
+  - Supply
+  - Maintenance
+
+- type: job
+  id: ChiefSupply
+  name: job-name-chief-supply
+  description: job-description-chief-supply
+  playTimeTracker: JobChiefSupply
+  requirements:
+  - !type:SpeciesRequirement
+    species:
+    - Human
+  - !type:DepartmentTimeRequirement
+    department: Supply
+    time: 60h
+  startingGear: CargoTechGear
+  icon: "JobIconQuartermaster"
+  access:
+  - Supply
+  - Maintenance
+
+# NT LABS research and development
+- type: job
+  id: Researcher
+  name: job-name-researcher
+  description: job-description-researcher
+  playTimeTracker: JobResearcher
+  requirements:
+  - !type:SpeciesRequirement
+    species:
+    - Human
+  startingGear: ScientistGear
+  icon: "JobIconScientist"
+  access:
+  - ResearchAndDevelopment
+  - Maintenance
+
+- type: job
+  id: SeniorResearcher
+  name: job-name-senior-researcher
+  description: job-description-senior-researcher
+  playTimeTracker: JobSeniorResearcher
+  requirements:
+  - !type:SpeciesRequirement
+    species:
+    - Human
+  - !type:DepartmentTimeRequirement
+    department: ResearchAndDevelopment
+    time: 20h
+  startingGear: ScientistGear
+  icon: "JobIconScientist"
+  access:
+  - ResearchAndDevelopment
+  - Maintenance
+
+- type: job
+  id: ResearchDevelopmentDirector
+  name: job-name-research-development-director
+  description: job-description-research-development-director
+  playTimeTracker: JobResearchAndDevelopmentDirector
+  requirements:
+  - !type:SpeciesRequirement
+    species:
+    - Human
+  - !type:DepartmentTimeRequirement
+    department: ResearchAndDevelopment
+    time: 60h
+  startingGear: ScientistGear
+  icon: "JobIconResearchDirector"
+  access:
+  - ResearchAndDevelopment
+  - Maintenance
+
+# NT LABS technical department
+- type: job
+  id: Technician
+  name: job-name-technician
+  description: job-description-technician
+  playTimeTracker: JobTechnician
+  requirements:
+  - !type:SpeciesRequirement
+    species:
+    - Human
+  startingGear: StationEngineerGear
+  icon: "JobIconStationEngineer"
+  access:
+  - Technical
+  - Maintenance
+
+- type: job
+  id: Engineer
+  name: job-name-engineer
+  description: job-description-engineer
+  playTimeTracker: JobEngineer
+  requirements:
+  - !type:SpeciesRequirement
+    species:
+    - Human
+  - !type:DepartmentTimeRequirement
+    department: Technical
+    time: 20h
+  startingGear: StationEngineerGear
+  icon: "JobIconStationEngineer"
+  access:
+  - Technical
+  - Maintenance
+
+- type: job
+  id: SeniorEngineer
+  name: job-name-senior-engineer
+  description: job-description-senior-engineer
+  playTimeTracker: JobSeniorEngineer
+  requirements:
+  - !type:SpeciesRequirement
+    species:
+    - Human
+  - !type:DepartmentTimeRequirement
+    department: Technical
+    time: 60h
+  startingGear: StationEngineerGear
+  icon: "JobIconChiefEngineer"
+  access:
+  - Technical
+  - Maintenance
