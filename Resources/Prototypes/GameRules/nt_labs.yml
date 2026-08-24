@@ -1,0 +1,8 @@
+- type: entity
+  parent: BaseGameRule
+  id: NtLabsRule
+  components:
+  - type: NtLabsRule
+    stabilityPeriod: 00:10:00
+    baseShiftTime: 01:00:00
+    difficultyStep: 00:15:00
