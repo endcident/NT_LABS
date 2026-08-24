@@ -3,6 +3,6 @@
   id: NtLabsRule
   components:
   - type: NtLabsRule
-    stabilityPeriod: 00:10:00
-    baseShiftTime: 01:00:00
-    difficultyStep: 00:15:00
+    stabilityPeriod: 10m
+    baseShiftTime: 1h
+    difficultyStep: 15m
