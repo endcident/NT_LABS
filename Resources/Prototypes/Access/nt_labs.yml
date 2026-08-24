@@ -1,0 +1,49 @@
+- type: accessLevel
+  id: InternalSecurity
+  name: id-card-access-level-internal-security
+
+- type: accessLevel
+  id: Containment
+  name: id-card-access-level-containment
+
+- type: accessLevel
+  id: Supply
+  name: id-card-access-level-supply
+
+- type: accessLevel
+  id: ResearchAndDevelopment
+  name: id-card-access-level-research-and-development
+
+- type: accessLevel
+  id: Technical
+  name: id-card-access-level-technical
+
+- type: accessGroup
+  id: InternalSecurity
+  tags:
+  - InternalSecurity
+  - Maintenance
+
+- type: accessGroup
+  id: Containment
+  tags:
+  - Containment
+  - Maintenance
+
+- type: accessGroup
+  id: Supply
+  tags:
+  - Supply
+  - Maintenance
+
+- type: accessGroup
+  id: ResearchAndDevelopment
+  tags:
+  - ResearchAndDevelopment
+  - Maintenance
+
+- type: accessGroup
+  id: Technical
+  tags:
+  - Technical
+  - Maintenance
