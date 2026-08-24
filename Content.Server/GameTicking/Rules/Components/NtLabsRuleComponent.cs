@@ -7,16 +7,16 @@ namespace Content.Server.GameTicking.Rules.Components;
 [RegisterComponent]
 public sealed partial class NtLabsRuleComponent : Component
 {
-    [DataField]
+    [DataField("difficulty")]
     public int Difficulty = 1;
 
-    [DataField]
+    [DataField("stabilityPeriod")]
     public TimeSpan StabilityPeriod = TimeSpan.FromMinutes(10);
 
-    [DataField]
+    [DataField("baseShiftTime")]
     public TimeSpan BaseShiftTime = TimeSpan.FromHours(1);
 
-    [DataField]
+    [DataField("difficultyStep")]
     public TimeSpan DifficultyStep = TimeSpan.FromMinutes(15);
 
     public TimeSpan StabilityRemaining;
